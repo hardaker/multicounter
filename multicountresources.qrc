@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>images/ed.jpg</file>
         <file>images/ed.png</file>
+        <file>qml/multicounter/CounterBar.qml</file>
+        <file>qml/multicounter/main.qml</file>
     </qresource>
 </RCC>
