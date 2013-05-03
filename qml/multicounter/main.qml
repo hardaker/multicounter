@@ -24,6 +24,7 @@ Rectangle {
         }
         CounterBar {
             who: "Ed"
+            imagesrc: "qrc:/images/ed.png"
         }
         CounterBar {
             who: "Jason"

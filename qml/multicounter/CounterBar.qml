@@ -6,10 +6,21 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     color: "#ffffff"
     width: parent.width
+    z: -10
 
     property int value: 0
     property int textHeight: 80
     property string who: "person"
+    property string imagesrc: ""
+
+    Image {
+        source: imagesrc
+        height: parent.height
+        anchors.right: parent.right
+        anchors.top: parent.top
+        fillMode: Image.PreserveAspectFit
+        z: 1
+    }
 
     Rectangle {
         id: whotitle
@@ -18,6 +29,7 @@ Rectangle {
         width: parent.width
         height: whotext.height + 10
         anchors.margins: 5
+        z: 0
 
         Text {
             id: whotext
@@ -35,6 +47,7 @@ Rectangle {
         anchors.left: parent.left
         font.pixelSize: textHeight
         anchors.leftMargin: 10
+        z: 10
         MouseArea {
             anchors.fill: parent
             onClicked: value += 1
@@ -46,6 +59,7 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: whotitle.bottom
         font.pixelSize: textHeight
+        z: 10
         MouseArea {
             anchors.fill: parent
             onClicked: value = 0
@@ -58,6 +72,7 @@ Rectangle {
         anchors.top: whotitle.bottom
         font.pixelSize: textHeight
         anchors.rightMargin: 10
+        z: 10
         MouseArea {
             anchors.fill: parent
             onClicked: value -= 1
