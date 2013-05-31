@@ -15,7 +15,7 @@ Rectangle {
 
     Image {
         source: who == "Ed" ? "qrc:/images/ed.png" : imagesrc
-        height: parent.height
+        height: parent.height * ( 1 + value/10)
         anchors.right: parent.right
         anchors.top: parent.top
         fillMode: Image.PreserveAspectFit
