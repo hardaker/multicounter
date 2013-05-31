@@ -2,7 +2,7 @@ import QtQuick 1.1
 
 Rectangle {
     id: counterbar
-    height:whotitle.height + plus.height + 40
+    height:whotitle.height + plus.height + 20
     anchors.horizontalCenter: parent.horizontalCenter
     color: "#ffffff"
     width: parent.width
