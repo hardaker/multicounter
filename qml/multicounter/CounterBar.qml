@@ -14,12 +14,16 @@ Rectangle {
     property string imagesrc: ""
 
     Image {
+        id: whoimage
         source: who == "Ed" ? "qrc:/images/ed.png" : imagesrc
         height: parent.height * ( 1 + value/10)
         anchors.right: parent.right
         anchors.top: parent.top
         fillMode: Image.PreserveAspectFit
         z: 1
+        Behavior on height {
+          NumberAnimation { duration: 500; easing.type: Easing.InOutQuad }
+        }
     }
 
     Rectangle {
