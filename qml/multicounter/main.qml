@@ -34,8 +34,7 @@ Flickable {
                 who: "Wes"
             }
             CounterBar {
-                who: "Ed"
-                imagesrc: "qrc:/images/ed.png"
+                who: "Edu"
             }
             CounterBar {
                 who: "Jason"

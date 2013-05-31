@@ -10,11 +10,11 @@ Rectangle {
 
     property int value: 0
     property int textHeight: 80
-    property string who: "person"
+    property alias who: whotext.text
     property string imagesrc: ""
 
     Image {
-        source: imagesrc
+        source: who == "Ed" ? "qrc:/images/ed.png" : imagesrc
         height: parent.height
         anchors.right: parent.right
         anchors.top: parent.top
@@ -31,9 +31,9 @@ Rectangle {
         anchors.margins: 5
         z: 0
 
-        Text {
+        TextInput {
             id: whotext
-            text: who
+            text: "person"
             font.pixelSize: textHeight/3
             anchors.centerIn: parent
             z: 1
