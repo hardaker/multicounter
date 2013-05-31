@@ -26,3 +26,6 @@ qtcAddDeployment()
 
 RESOURCES += \
     multicountresources.qrc
+
+OTHER_FILES += \
+    qml/multicounter/Main.qml

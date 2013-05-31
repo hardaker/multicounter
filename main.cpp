@@ -8,7 +8,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QmlApplicationViewer viewer;
     viewer.addImportPath(QLatin1String("modules"));
     viewer.setOrientation(QmlApplicationViewer::ScreenOrientationLockPortrait);
-    viewer.setSource(QUrl("qrc:/qml/multicounter/main.qml"));
+    viewer.setSource(QUrl("qrc:/qml/multicounter/Main.qml"));
     viewer.showExpanded();
 
     return app->exec();

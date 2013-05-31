@@ -3,7 +3,7 @@
         <file>images/ed.jpg</file>
         <file>images/ed.png</file>
         <file>qml/multicounter/CounterBar.qml</file>
-        <file>qml/multicounter/main.qml</file>
+        <file>qml/multicounter/Main.qml</file>
         <file>qml/multicounter/meegocounter.qml</file>
     </qresource>
 </RCC>
