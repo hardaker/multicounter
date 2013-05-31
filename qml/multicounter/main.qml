@@ -34,7 +34,7 @@ Flickable {
                 who: "Wes"
             }
             CounterBar {
-                who: "Edu"
+                who: "Ed"
             }
             CounterBar {
                 who: "Jason"
