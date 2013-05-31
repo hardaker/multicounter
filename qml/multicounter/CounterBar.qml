@@ -41,6 +41,7 @@ Rectangle {
             font.pixelSize: textHeight/3
             anchors.centerIn: parent
             z: 1
+            onAccepted: closeSoftwareInputPanel()
         }
     }
 
