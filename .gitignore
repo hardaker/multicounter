@@ -1,5 +1,5 @@
 multicounter.pro.user
-multicounter
+./multicounter
 Makefile
 moc_*cpp
 qrc*cpp
