@@ -1,2 +1,5 @@
 multicounter.pro.user
 multicounter
+Makefile
+moc_*cpp
+qrc*cpp
